@@ -6,98 +6,113 @@
   <title>doc.dev</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer src="neurons.js"></script>
 </head>
 <body>
+  <div class="grain"></div>
 
-  <nav>
-    <a href="/" class="logo">doc.dev</a>
+  <nav class="nav">
+    <a href="/" class="nav-logo">/doc.dev</a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#projects">Projects</a>
-      <a href="#connect">Connect</a>
+      <a href="https://github.com/bronzdoc" target="_blank" rel="noopener">GitHub</a>
     </div>
   </nav>
 
-  <section class="hero">
-    <div class="accent">▲</div>
-    <h1>Luis<br>Sagastume</h1>
-    <p class="tagline">Software Engineer. Ruby programmer.<br>Building payment infrastructure in Latin America.</p>
-  </section>
-
-  <section class="stats">
-    <div class="stat">
-      <span class="stat-label">Language</span>
-      <span class="stat-value">Ruby</span>
-    </div>
-    <div class="stat">
-      <span class="stat-label">Domain</span>
-      <span class="stat-value">Payments</span>
-    </div>
-    <div class="stat">
-      <span class="stat-label">Based in</span>
-      <span class="stat-value">Guatemala</span>
-    </div>
-  </section>
-
-  <section id="about" class="billboard">
-    <span class="section-label">About</span>
-    <div class="billboard-content">
-      <p>I'm a software engineer focused on payment systems and developer tools. I work at <strong>Recurrente</strong>, where we're building the payment platform for Latin America.</p>
-      <p>I write Ruby professionally and believe in building things that are simple, reliable, and well-crafted. I care about clean code, good abstractions, and systems that work when you're not looking.</p>
-      <p>When I'm not coding, I'm probably reading about markets, trading futures, or figuring out how to make the internet's money layer better.</p>
-    </div>
-  </section>
-
-  <section id="work" class="billboard">
-    <span class="section-label">Work</span>
-    <div class="billboard-content">
-      <div class="work-entry">
-        <div class="work-top">
-          <span class="company">Recurrente</span>
-          <span class="period">Current</span>
+  <main>
+    <section class="hero">
+      <div class="hero-label">/Welcome</div>
+      <h1>Luis Sagastume</h1>
+      <p class="hero-sub">Software Engineer. Ruby programmer.<br>Building payment infrastructure in Latin America.</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-label">Language of choice</span>
+          <span class="stat-value">Ruby</span>
         </div>
-        <p class="role">Software Engineer</p>
-        <p>Payment platform for Latin America. Building checkout flows, POS integrations, Apple Pay/Google Pay, and in-house support tooling. Ruby on Rails.</p>
+        <div class="stat">
+          <span class="stat-label">Domain</span>
+          <span class="stat-value">Payments</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Based in</span>
+          <span class="stat-value">Guatemala</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects" class="billboard">
-    <span class="section-label">Projects</span>
-    <div class="project-grid">
-      <a href="https://github.com/bronzdoc" class="project-card" target="_blank" rel="noopener">
-        <span class="card-icon">→</span>
-        <h3>Open Source</h3>
-        <p>Check out my work on GitHub.</p>
-      </a>
-      <div class="project-card">
-        <span class="card-icon">◆</span>
-        <h3>Payment Infrastructure</h3>
-        <p>Checkout, POS, and payment processing systems for LATAM.</p>
+    <div class="divider"></div>
+
+    <section id="about" class="section">
+      <div class="section-label">/About</div>
+      <div class="section-content">
+        <p>I'm a software engineer focused on payment systems and developer tools. I work at <strong>Recurrente</strong>, where we're building the payment platform for Latin America.</p>
+        <p>I write Ruby professionally and believe in building things that are simple, reliable, and well-crafted. I care about clean code, good abstractions, and systems that work when you're not looking.</p>
+        <p>When I'm not coding, I'm probably reading about markets, trading futures, or figuring out how to make the internet's money layer better.</p>
       </div>
-      <div class="project-card">
-        <span class="card-icon">▲</span>
-        <h3>Developer Tools</h3>
-        <p>CLIs, automation, and tools that make developers' lives easier.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section id="work" class="section">
+      <div class="section-label">/Work</div>
+      <div class="section-content">
+        <div class="work-item">
+          <div class="work-header">
+            <span class="work-company">Recurrente</span>
+            <span class="work-period">Current</span>
+          </div>
+          <p class="work-role">Software Engineer</p>
+          <p>Payment platform for Latin America. Building checkout flows, POS integrations, Apple Pay/Google Pay, and in-house support tooling. Ruby on Rails.</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="connect" class="billboard">
-    <span class="section-label">Connect</span>
-    <div class="billboard-content connect">
-      <a href="https://github.com/bronzdoc" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="mailto:lsagastume1990@gmail.com">Email ↗</a>
-    </div>
-  </section>
+    <div class="divider"></div>
 
-  <footer>
+    <section id="projects" class="section">
+      <div class="section-label">/Projects</div>
+      <div class="section-content">
+        <div class="project-grid">
+          <a href="https://github.com/bronzdoc" class="project-card" target="_blank" rel="noopener">
+            <div class="project-icon">→</div>
+            <h3>Open Source</h3>
+            <p>Check out my work on GitHub.</p>
+          </a>
+          <div class="project-card">
+            <div class="project-icon">◆</div>
+            <h3>Payment Infrastructure</h3>
+            <p>Checkout, POS, and payment processing systems for LATAM.</p>
+          </div>
+          <div class="project-card">
+            <div class="project-icon">▲</div>
+            <h3>Developer Tools</h3>
+            <p>CLIs, automation, and tools that make developers' lives easier.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section">
+      <div class="section-label">/Connect</div>
+      <div class="section-content">
+        <div class="connect-links">
+          <a href="https://github.com/bronzdoc" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="mailto:lsagastume1990@gmail.com">Email ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <span>© 2026 doc.dev</span>
+    <span class="footer-dot">·</span>
     <span>Built with Ruby spirit</span>
   </footer>
-
 </body>
 </html>
